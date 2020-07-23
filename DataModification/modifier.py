@@ -6,7 +6,7 @@ import pandas as pd
 ###sort based on price##
 
 MainData = pd.read_excel(r'LentilRawData.xlsx')
-MainDatabase = MainData.sort_values('Price', ascending=True)
+MainDatabase = MainData.sort_values('Price')
 
 price = MainDatabase.iloc[ : , -1].values
 
